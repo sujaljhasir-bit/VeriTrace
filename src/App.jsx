@@ -11,6 +11,7 @@ import { DashboardPage } from "./pages/DashboardPage.jsx";
 import { ChatbotPage } from "./pages/ChatbotPage.jsx";
 import { AnalyticsPage } from "./pages/AnalyticsPage.jsx";
 import { ProfilePage } from "./pages/ProfilePage.jsx";
+import { CrimeHotspots } from "./pages/CrimeHotspots.jsx";
 import { NotFound } from "./pages/NotFound.jsx";
 
 import "./styles/globals.css";
@@ -30,6 +31,7 @@ function AppContent() {
           <Route path="/dashboard" element={<DashboardPage />} />
           <Route path="/chatbot" element={<ChatbotPage />} />
           <Route path="/analytics" element={<AnalyticsPage />} />
+          <Route path="/crime-hotspots" element={<CrimeHotspots />} />
           <Route path="/profile" element={<ProfilePage />} />
           <Route path="*" element={<NotFound />} />
         </Routes>

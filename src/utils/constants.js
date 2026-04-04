@@ -19,6 +19,7 @@ export const STATUS_BG = {
 export const NAVIGATION_LINKS = [
   { label: "Home", href: "/", icon: "Home" },
   { label: "Verify", href: "/dashboard", icon: "Search" },
+  { label: "Crime Map", href: "/crime-hotspots", icon: "MapPin" },
   { label: "Chat", href: "/chatbot", icon: "MessageCircle" },
   { label: "Analytics", href: "/analytics", icon: "BarChart3" },
   { label: "Profile", href: "/profile", icon: "User" },
