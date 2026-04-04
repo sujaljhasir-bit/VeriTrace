@@ -5,11 +5,6 @@ It combines intelligent information retrieval, structured knowledge bases, multi
 
 ---
 
-## 🚀 Live Demo
-🔗 **[Try it Now → TruthTrace-LLM Web App](https://truthtrace-llm-aa8ehtudvwvspzlqbqx2kg.streamlit.app/)**  
-
----
-
 ## 🔹 Key Features
 
 ### ✨ Intelligent Claim Preprocessing  
@@ -163,11 +158,6 @@ streamlit run app.py
 - 📰 **Media Fact-Checking** – Speed up editorial verification workflows  
 - 🎓 **Academic Research** – Validate claims and citations with evidence  
 - 🏢 **Enterprise Knowledge Validation** – Automate compliance checks and internal fact-checking
-
----
-
-## 📄 License
-Licensed under the **MIT License**.
 
 ---
 
