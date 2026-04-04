@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  @apply m-0 p-0 box-border;
+}
+
+html {
+  @apply scroll-smooth;
+}
+
+body {
+  @apply bg-dark-900 text-dark-100 font-sans antialiased;
+  overflow-x: hidden;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  @apply w-2;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-dark-900;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-dark-700 rounded-full hover:bg-dark-600;
+}
+
+/* Selection */
+::selection {
+  @apply bg-accent-cyan/30 text-accent-cyan;
+}
+
+::-moz-selection {
+  @apply bg-accent-cyan/30 text-accent-cyan;
+}
+
+/* Links */
+a {
+  @apply transition-colors duration-200;
+  @apply text-accent-cyan hover:text-accent-purple;
+}
+
+/* Form Elements */
+input,
+textarea,
+select {
+  @apply bg-dark-800 border border-dark-700 rounded-lg px-4 py-2;
+  @apply text-dark-100 focus:outline-none focus:border-accent-cyan focus:ring-2 focus:ring-accent-cyan/20;
+  @apply transition-all duration-200;
+}
+
+input::placeholder,
+textarea::placeholder {
+  @apply text-dark-500;
+}
+
+/* Buttons */
+button {
+  @apply transition-all duration-200 font-medium;
+  @apply focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-dark-900;
+}
+
+/* Glassmorphism */
+.glass {
+  @apply bg-dark-900/40 backdrop-blur-xl border border-dark-700/50;
+  @apply hover:border-dark-600/50 transition-all duration-300;
+}
+
+.glass-lg {
+  @apply bg-dark-900/60 backdrop-blur-2xl border border-dark-700/30;
+}
+
+/* Gradient Text */
+.gradient-text {
+  @apply bg-gradient-to-r from-accent-cyan via-accent-purple to-accent-pink text-transparent bg-clip-text;
+}
+
+/* Neon Glow */
+.neon-glow {
+  @apply shadow-glow-cyan;
+  animation: glow 2s ease-in-out infinite;
+}
+
+/* Smooth animations */
+@keyframes fadeIn {
+  from {
+    @apply opacity-0;
+  }
+  to {
+    @apply opacity-100;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    @apply opacity-0 translate-y-4;
+  }
+  to {
+    @apply opacity-100 translate-y-0;
+  }
+}
+
+@keyframes slideDown {
+  from {
+    @apply opacity-0 -translate-y-4;
+  }
+  to {
+    @apply opacity-100 translate-y-0;
+  }
+}
+
+@keyframes slideLeft {
+  from {
+    @apply opacity-0 translate-x-4;
+  }
+  to {
+    @apply opacity-100 translate-x-0;
+  }
+}
+
+@keyframes slideRight {
+  from {
+    @apply opacity-0 -translate-x-4;
+  }
+  to {
+    @apply opacity-100 translate-x-0;
+  }
+}
+
+.animate-in-fade {
+  animation: fadeIn 0.5s ease-out;
+}
+
+.animate-in-up {
+  animation: slideUp 0.5s ease-out;
+}
+
+.animate-in-down {
+  animation: slideDown 0.5s ease-out;
+}
+
+.animate-in-left {
+  animation: slideLeft 0.5s ease-out;
+}
+
+.animate-in-right {
+  animation: slideRight 0.5s ease-out;
+}

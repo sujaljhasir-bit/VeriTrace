@@ -22,3 +22,4 @@ Thumbs.db
 
 # Any API keys or credential files
 secrets.json
+node_modules
